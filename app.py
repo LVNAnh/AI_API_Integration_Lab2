@@ -8,7 +8,7 @@ UPLOAD_FOLDER = 'uploads'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-HUGGING_FACE_TOKEN = os.getenv("HUGGING_FACE_TOKEN")
+# HUGGING_FACE_TOKEN = os.getenv("HUGGING_FACE_TOKEN")
 
 def detect_text(image_path):
     API_URL = "https://api-inference.huggingface.co/models/microsoft/trocr-base-stage1"
