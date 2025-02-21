@@ -13,7 +13,7 @@ HUGGING_FACE_TOKEN = os.getenv("HUGGING_FACE_TOKEN")
 def detect_text(image_path):
     API_URL = "https://api-inference.huggingface.co/models/microsoft/trocr-base-stage1"
     headers = {
-        "Authorization": f"Bearer {HUGGINGFACE_TOKEN}",
+        "Authorization": f"Bearer {HUGGING_FACE_TOKEN}",
         "Content-Type": "application/octet-stream"
     }
     with open(image_path, "rb") as image:
